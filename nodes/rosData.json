@@ -1,0 +1,21 @@
+{
+    "packType":"rov",
+    "rosPackName": "/gupik/",
+    "rosTopics": {
+        "position": [
+            "position/rovPose",
+            "position/thrusterPose",
+            "position/rov_fdbck",
+            "position/trackBall"
+        ],
+        "camera": [
+            "camera/frontalCamera",
+            "camera/downwardCamera"
+        ]
+    },
+    "modelNames": [
+        "gupikModel",
+        "tackBall",
+        "coralModel"
+    ]
+}

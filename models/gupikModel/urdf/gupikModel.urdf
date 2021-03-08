@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="gupikModel">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0077901 -0.020288 0.025482"
+        rpy="0 0 0" />
+      <mass
+        value="10.876" />
+      <inertia
+        ixx="0.18268"
+        ixy="1.3979E-05"
+        ixz="0.0037324"
+        iyy="0.092289"
+        iyz="-7.2983E-06"
+        izz="0.25536" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.654901961 0.098039216 0.188235294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="gripper">
+    <inertial>
+      <origin
+        xyz="0.14991 -0.00013256 -3.9014E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.11012" />
+      <inertia
+        ixx="2.2543E-05"
+        ixy="-1.2617E-07"
+        ixz="3.4385E-08"
+        iyy="0.00028052"
+        iyz="7.2149E-08"
+        izz="0.00028412" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.117647059 0.117647059 0.117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_fixed"
+    type="fixed">
+    <origin
+      xyz="0.15242 -0.021021 -0.058193"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="gripper" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pednik_front_left">
+    <inertial>
+      <origin
+        xyz="0.076717 1.6255E-05 0.0021123"
+        rpy="0 0 0" />
+      <mass
+        value="0.41728" />
+      <inertia
+        ixx="0.00096877"
+        ixy="6.7115E-08"
+        ixz="-3.547E-07"
+        iyy="0.00097755"
+        iyz="4.8822E-08"
+        izz="0.0016441" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_front_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.117647059 0.117647059 0.117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_front_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pednik_front_left_fixed"
+    type="fixed">
+    <origin
+      xyz="0.086854 0.11898 0.0018077"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="pednik_front_left" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="pednik_front_right">
+    <inertial>
+      <origin
+        xyz="0.076717 1.4217E-05 0.002113"
+        rpy="0 0 0" />
+      <mass
+        value="0.41728" />
+      <inertia
+        ixx="0.00096877"
+        ixy="6.7116E-08"
+        ixz="-3.547E-07"
+        iyy="0.00097755"
+        iyz="4.8822E-08"
+        izz="0.0016441" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_front_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.117647059 0.117647059 0.117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_front_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pednik_front_right_fixed"
+    type="fixed">
+    <origin
+      xyz="0.086854 -0.16102 0.0018071"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="pednik_front_right" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="pednik_back">
+    <inertial>
+      <origin
+        xyz="0.076717 1.6255E-05 0.0021123"
+        rpy="0 0 0" />
+      <mass
+        value="0.41728" />
+      <inertia
+        ixx="0.00096877"
+        ixy="6.7114E-08"
+        ixz="-3.547E-07"
+        iyy="0.00097755"
+        iyz="4.8822E-08"
+        izz="0.0016441" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.117647059 0.117647059 0.117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pednik_back_fixed"
+    type="fixed">
+    <origin
+      xyz="-0.23548 -0.097521 0.0018077"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="pednik_back" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="pednik_bot_left">
+    <inertial>
+      <origin
+        xyz="0.076717 1.5825E-05 0.0021123"
+        rpy="0 0 0" />
+      <mass
+        value="0.41728" />
+      <inertia
+        ixx="0.00096877"
+        ixy="6.7192E-08"
+        ixz="-3.5468E-07"
+        iyy="0.00097755"
+        iyz="-8.7027E-08"
+        izz="0.0016441" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_bot_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.411764706 0.235294118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_bot_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pednik_bot_left_revolute"
+    type="revolute">
+    <origin
+      xyz="0.0088545 0.14398 -0.043193"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="pednik_bot_left" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1000.0"
+      upper="1000.0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="pednik_bot_right">
+    <inertial>
+      <origin
+        xyz="0.076717 1.5825E-05 0.0021123"
+        rpy="0 0 0" />
+      <mass
+        value="0.41728" />
+      <inertia
+        ixx="0.00096877"
+        ixy="6.7193E-08"
+        ixz="-3.5469E-07"
+        iyy="0.00097755"
+        iyz="-8.7027E-08"
+        izz="0.0016441" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_bot_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.411764706 0.235294118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gupikModel/meshes/pednik_bot_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pednik_bot_right_revolute"
+    type="revolute">
+    <origin
+      xyz="0.0088545 -0.18602 -0.043193"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="pednik_bot_right" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1000.0"
+      upper="1000.0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <gazebo>
+  <static>false</static>
+    <plugin name="gupikModel" filename="gupikModel/libgupikModel.so"/>
+  </gazebo>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <gazebo reference="gripper">
+      <material>Gazebo/FlatBlack</material>
+  </gazebo>
+
+  <gazebo reference="pednik_front_left">
+      <material>Gazebo/FlatBlack</material>
+  </gazebo>
+
+  <gazebo reference="pednik_front_right">
+      <material>Gazebo/FlatBlack</material>
+  </gazebo>
+
+  <gazebo reference="pednik_back">
+      <material>Gazebo/FlatBlack</material>
+  </gazebo>
+
+  <gazebo reference="pednik_bot_left">
+      <material>Gazebo/Green</material>
+  </gazebo>
+
+  <gazebo reference="pednik_bot_right">
+      <material>Gazebo/Green</material>
+  </gazebo>
+  
+</robot>
