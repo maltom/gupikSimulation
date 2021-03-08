@@ -1,0 +1,3 @@
+[submodule "matlab_files/LQR_model"]
+	path = matlab_files/LQR_model
+	url = https://github.com/filipodu982/LQR_model.git
