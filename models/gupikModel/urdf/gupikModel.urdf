@@ -392,8 +392,8 @@
   </link>
 
   <joint name="mainCamera_joint" type="fixed">
-    <axis xyz="0 1 0" />
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0" />
+    <origin xyz="0.24 -0.021021 0.021021" rpy="0 0.129154365 0"/>
     <parent link="base_link"/>
     <child link="mainCamera"/>
   </joint>
