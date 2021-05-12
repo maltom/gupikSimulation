@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="coralColonyCut">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0130130586882464 -0.0186321803409218 0.0693050957468901"
+        rpy="0 0 0" />
+      <mass
+        value="0.598845649993383" />
+      <inertia
+        ixx="0.0153601360101017"
+        ixy="-0.000145278344408233"
+        ixz="0.000457315324787233"
+        iyy="0.00354422180066577"
+        iyz="0.00101559539434738"
+        izz="0.0136920470434805" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="part4_Link">
+    <inertial>
+      <origin
+        xyz="-4.99972084786395E-06 -0.00373338781968693 0.111744185643968"
+        rpy="0 0 0" />
+      <mass
+        value="0.0969198039642249" />
+      <inertia
+        ixx="0.000418936512631073"
+        ixy="3.93314049558749E-15"
+        ixz="9.77786723366793E-13"
+        iyy="0.000409215372129597"
+        iyz="-1.32827962830476E-05"
+        izz="1.52541238995031E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part4_fixed"
+    type="fixed">
+    <origin
+      xyz="0 -0.1705 0.18761"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="part4_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part3_Link">
+    <inertial>
+      <origin
+        xyz="-4.99999999924231E-06 -0.0137318326946166 0.0312060406230509"
+        rpy="0 0 0" />
+      <mass
+        value="0.0281184796926807" />
+      <inertia
+        ixx="1.50586211973433E-05"
+        ixy="2.96895333527314E-21"
+        ixz="-4.03756604518295E-20"
+        iyy="1.48595644822487E-05"
+        iyz="1.10323506414933E-06"
+        izz="1.79369084656615E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part3_fixed"
+    type="fixed">
+    <origin
+      xyz="0 -0.046 0.07503"
+      rpy="0 0 0" />
+    <parent
+      link="part4_Link" />
+    <child
+      link="part3_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part2_Link">
+    <inertial>
+      <origin
+        xyz="-4.96733700986508E-06 0.000714404088624304 0.085825376242205"
+        rpy="0 0 0" />
+      <mass
+        value="0.0718248865077453" />
+      <inertia
+        ixx="0.000159918818849133"
+        ixy="1.23633640608755E-10"
+        ixz="1.31586058272146E-10"
+        iyy="0.000157051391404197"
+        iyz="-3.52643586705953E-06"
+        izz="7.01384565994679E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part2_fixed"
+    type="fixed">
+    <origin
+      xyz="0 0 0.23504"
+      rpy="0 0 0" />
+    <parent
+      link="part4_Link" />
+    <child
+      link="part2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part1_Link">
+    <inertial>
+      <origin
+        xyz="5.00000000130265E-06 0.0141609387068788 0.0509283679788508"
+        rpy="0 0 0" />
+      <mass
+        value="0.042246856850289" />
+      <inertia
+        ixx="5.00300336432798E-05"
+        ixy="-2.17670381114558E-21"
+        ixz="-1.45544543068663E-19"
+        iyy="4.98158537587726E-05"
+        iyz="-1.80651228539477E-06"
+        izz="2.6100519450586E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part1_fixed"
+    type="fixed">
+    <origin
+      xyz="-1E-05 0.026995 0.10264"
+      rpy="0 0 0" />
+    <parent
+      link="part2_Link" />
+    <child
+      link="part1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part6_Link">
+    <inertial>
+      <origin
+        xyz="-4.99739226568875E-06 -0.0116670048403046 0.0867461608430799"
+        rpy="0 0 0" />
+      <mass
+        value="0.101165128405053" />
+      <inertia
+        ixx="0.000265966771354361"
+        ixy="5.9705969491741E-12"
+        ixz="-5.67642508311449E-12"
+        iyy="0.000235976628423259"
+        iyz="-1.44975313261071E-05"
+        izz="3.57638844616819E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part6_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part6_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part6_fixed"
+    type="fixed">
+    <origin
+      xyz="0 -0.0505 0.18761"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="part6_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part5_Link">
+    <inertial>
+      <origin
+        xyz="-5.00290299813615E-06 -0.0079464562887241 0.0690184458847976"
+        rpy="0 0 0" />
+      <mass
+        value="0.0656247018522205" />
+      <inertia
+        ixx="9.24962888545499E-05"
+        ixy="7.30314273617971E-12"
+        ixz="-6.50699604056355E-12"
+        iyy="7.87691048008746E-05"
+        iyz="1.86690252642677E-06"
+        izz="1.74853805038705E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part5_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part5_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part5_fixed"
+    type="fixed">
+    <origin
+      xyz="0 0 0.18939"
+      rpy="0 0 0" />
+    <parent
+      link="part6_Link" />
+    <child
+      link="part5_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part9_Link">
+    <inertial>
+      <origin
+        xyz="-4.99951377741232E-06 -0.0210328938545636 0.0716163092837544"
+        rpy="0 0 0" />
+      <mass
+        value="0.0899994155753666" />
+      <inertia
+        ixx="0.000171413796503586"
+        ixy="5.26452381358543E-12"
+        ixz="-3.93136257350004E-12"
+        iyy="0.000138961072178149"
+        iyz="3.31895268319923E-05"
+        izz="3.75932427685874E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part9_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part9_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part9_fixed"
+    type="fixed">
+    <origin
+      xyz="0 0.0505 0.18761"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="part9_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part8_Link">
+    <inertial>
+      <origin
+        xyz="-5.00804651945172E-06 0.0212719211947087 0.0858724480722534"
+        rpy="0 0 0" />
+      <mass
+        value="0.0822877579784405" />
+      <inertia
+        ixx="0.000203729364746164"
+        ixy="1.02024722056659E-11"
+        ixz="7.60052490916797E-12"
+        iyy="0.000174398359173244"
+        iyz="-5.47344886357249E-05"
+        izz="3.40341914685005E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part8_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part8_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part8_fixed"
+    type="fixed">
+    <origin
+      xyz="0 0 0.10805"
+      rpy="0 0 0" />
+    <parent
+      link="part9_Link" />
+    <child
+      link="part8_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part7_Link">
+    <inertial>
+      <origin
+        xyz="-5.00014839560417E-06 -0.00568004945324685 0.0847901048387558"
+        rpy="0 0 0" />
+      <mass
+        value="0.0848393865921651" />
+      <inertia
+        ixx="0.000276018649946417"
+        ixy="4.46702514056546E-12"
+        ixz="-3.31697762197871E-12"
+        iyy="0.000262931316072701"
+        iyz="-2.26872972208152E-05"
+        izz="1.79352200842162E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part7_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part7_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part7_fixed"
+    type="fixed">
+    <origin
+      xyz="0 0 0.09641"
+      rpy="0 0 0" />
+    <parent
+      link="part8_Link" />
+    <child
+      link="part7_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part12_Link">
+    <inertial>
+      <origin
+        xyz="-5.00017328278444E-06 0.029983034766751 0.0596298043688601"
+        rpy="0 0 0" />
+      <mass
+        value="0.0832292688398839" />
+      <inertia
+        ixx="0.000148257035746927"
+        ixy="-1.1295528601544E-12"
+        ixz="-1.07390166420943E-12"
+        iyy="6.65126055493692E-05"
+        iyz="-2.52385685302601E-05"
+        izz="8.65009921068034E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part12_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part12_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part12_fixed"
+    type="fixed">
+    <origin
+      xyz="0 0.1415 0.18761"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="part12_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part11_Link">
+    <inertial>
+      <origin
+        xyz="-5.00093754873549E-06 0.0197107914509148 0.0579271775166629"
+        rpy="0 0 0" />
+      <mass
+        value="0.060908281826025" />
+      <inertia
+        ixx="7.77608419403032E-05"
+        ixy="-2.06257287392088E-12"
+        ixz="-2.05094283166934E-12"
+        iyy="3.71220612066984E-05"
+        iyz="-1.6744169914741E-05"
+        izz="4.41294919857776E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part11_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part11_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part11_fixed"
+    type="fixed">
+    <origin
+      xyz="0 0 0.10805"
+      rpy="0 0 0" />
+    <parent
+      link="part12_Link" />
+    <child
+      link="part11_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="part10_Link">
+    <inertial>
+      <origin
+        xyz="-4.9873202587897E-06 0.000964442085692435 0.0866316053893982"
+        rpy="0 0 0" />
+      <mass
+        value="0.0657537771424212" />
+      <inertia
+        ixx="0.000155519608221516"
+        ixy="9.37129552009325E-11"
+        ixz="1.63592268600471E-11"
+        iyy="0.000154717292347364"
+        iyz="-3.13484867225667E-07"
+        izz="4.56780286974508E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part10_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coralColonyCut/meshes/part10_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="part10_fixed"
+    type="fixed">
+    <origin
+      xyz="0 0 0.09641"
+      rpy="0 0 0" />
+    <parent
+      link="part11_Link" />
+    <child
+      link="part10_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <gazebo>
+    <static>true</static>
+  </gazebo>
+
+   <gazebo reference="base_link">
+    <material>Gazebo/CoralPink</material>
+  </gazebo>
+
+   <gazebo reference="part4_Link">
+    <material>Gazebo/CoralPink</material>
+  </gazebo>
+
+  <gazebo reference="part3_Link">
+    <material>Gazebo/CoralPink</material>
+  </gazebo>
+
+  <gazebo reference="part2_Link">
+    <material>Gazebo/White</material>
+  </gazebo>
+
+  <gazebo reference="part1_Link">
+    <material>Gazebo/White</material>
+  </gazebo>
+
+  <gazebo reference="part6_Link">
+    <material>Gazebo/CoralPink</material>
+  </gazebo>
+  
+  <gazebo reference="part5_Link">
+    <material>Gazebo/CoralPink</material>
+  </gazebo>
+
+  <gazebo reference="part9_Link">
+    <material>Gazebo/CoralPink</material>
+  </gazebo>
+  
+  <gazebo reference="part8_Link">
+    <material>Gazebo/White</material>
+  </gazebo>
+  
+  <gazebo reference="part7_Link">
+    <material>Gazebo/White</material>
+  </gazebo>
+  
+  <gazebo reference="part12_Link">
+    <material>Gazebo/CoralPink</material>
+  </gazebo>
+  
+  <gazebo reference="part11_Link">
+    <material>Gazebo/CoralPink</material>
+  </gazebo>
+  
+  <gazebo reference="part10_Link">
+    <material>Gazebo/CoralPink</material>
+  </gazebo>
+  
+</robot>
